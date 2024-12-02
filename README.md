@@ -51,14 +51,23 @@ Gamemode difficulties.
 
 ### TFT
 
-- `void drawGreen()`
+Everything is chosen using the targets and the laser gun.
+
+- `void drawDuel()`
 
 Creates a green circle with text in front to indicate Duel gamemode.
 
-- `void drawRed()`
+- `void drawAimlabs()`
 
 Creates a red circle with text in front to indicate AimLabs gamemode.
 
+- `void drawGamemodes()`
+
+Creates the design of the aimlabs model in order to point at the chosen difficulty:
+
+| 1 | 2 | 3 |
+|:-:|:-:|:-:|
+| **EASY** | **MEDIUM** | **HARD** |
 
 
 
