@@ -47,6 +47,18 @@ Function called in loop that runs the chosen gamemode difficulty.
 
 Gamemode difficulties.
 
+## Screens Interface
+
+### TFT
+
+- `void drawGreen()`
+
+Creates a green circle with text in front to indicate Duel gamemode.
+
+- `void drawRed()`
+
+Creates a red circle with text in front to indicate AimLabs gamemode.
+
 
 
 
