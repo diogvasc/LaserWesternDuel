@@ -4,7 +4,7 @@
 // Diogo Vasco - 2023226969
 // Rodrigo Gonçalves - 230226160
 //
-// TFT Interface
+// TFT Interface 
 //
 //================================================================
 
@@ -19,20 +19,21 @@ TFT screen = TFT(cs, dc, rst);
 
 //       W
 // H
+// + desce - sobe
 
 // blue | green | red
 
 void setup() {
   screen.begin();  // initialize the screen
   screen.background(255, 255, 255);   // make the background white
-  screen.setTextSize(3); // text size
+  screen.setTextSize(2); // text size
   
 }
 
 void drawDuel(){ // duel
 
-  screen.stroke(0, 150, 0);  // set the stroke color to green
-  screen.fill(0, 150, 0);  // set the fill color to green
+  screen.stroke(0, 0, 255);  // set the stroke color to red
+  screen.fill(0, 0, 255);  // set the fill color to red
   
   screen.circle(screen.width() - 145 , (screen.height()/2) - 22, 12); // duelo
 
@@ -43,8 +44,8 @@ void drawDuel(){ // duel
 
 void drawAimlabs(){ // aimlabs 
 
-  screen.stroke(0, 0, 255);  // set the stroke color to red
-  screen.fill(0, 0, 255);  // set the fill color to red
+  screen.stroke(0, 150, 0);  // set the stroke color to green
+  screen.fill(0, 150, 0);  // set the fill color to green
 
   screen.circle(screen.width() - 145 , (screen.height()/2) + 30, 12); // aimlabs
   
@@ -52,7 +53,7 @@ void drawAimlabs(){ // aimlabs
   screen.text("AIMLABS", (screen.width() - 90 ) / 2, (screen.height() + 38) / 2);
 }
 
-void drawGamemodes(){
+void drawDifficulties(){
   screen.stroke(0, 0, 255);  // set the stroke color to red
   screen.fill(0, 0, 255);  // set the fill color to red
   screen.circle(screen.width() - 135 , (screen.height()/2) - 30, 15);
@@ -75,7 +76,30 @@ void drawGamemodes(){
 
 }
 
+void winnerOne(){
+  screen.stroke(0, 0, 255);  // set the stroke color to red
+  screen.fill(0, 0, 255);  // set the fill color to red
+  
+  screen.circle(screen.width() - 145 , (screen.height()/2), 12); // duelo
+
+  screen.stroke(0, 0, 0);
+  screen.text("PLAYER ONE", (screen.width() - 90) / 2, (screen.height()/2)-15);
+  screen.text("WINS", (screen.width() - 30) / 2, (screen.height()/2)+5);
+}
+
+void winnerTwo(){
+  screen.stroke(0, 150, 0);  // set the stroke color to green
+  screen.fill(0, 150, 0);  // set the fill color to green
+  
+  screen.circle(screen.width() - 145 , (screen.height()/2), 12); // duelo
+
+  screen.stroke(0, 0, 0);
+  screen.text("PLAYER TWO", (screen.width() - 90) / 2, (screen.height()/2)-15);
+  screen.text("WINS", (screen.width() - 30) / 2, (screen.height()/2)+5);
+}
+
 void loop() {
+  
 }
 
 
