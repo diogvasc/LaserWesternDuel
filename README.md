@@ -61,7 +61,7 @@ Creates a green circle with text in front to indicate Duel gamemode.
 
 Creates a red circle with text in front to indicate AimLabs gamemode.
 
-- `void drawGamemodes()`
+- `void drawDifficulties()`
 
 Creates the design of the aimlabs model in order to point at the chosen difficulty:
 
@@ -69,6 +69,9 @@ Creates the design of the aimlabs model in order to point at the chosen difficul
 |:-:|:-:|:-:|
 | **EASY** | **MEDIUM** | **HARD** |
 
+- `void winnerOne() | void winnerTwo()`
+
+Announces the winner of the duel gamemode.
 
 
 
