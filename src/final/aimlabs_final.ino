@@ -452,7 +452,7 @@ void DuelGM() {
     }
   } while ((millis() - sec) < 1500);
 
-  delay(tempo - 100);
+  delay(tempo + 400);
 
   digitalWrite(LEDs[0], 1);
   unsigned int Timer = millis();
