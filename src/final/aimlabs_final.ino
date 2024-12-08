@@ -320,6 +320,7 @@ void ALHard() {//======= HARD GAME MODE ========
   Serial.print("Total de hits: ");
   Serial.println(playerHits); 
 }
+}
 
 
 void ALMedium() {//======= MEDIUM GAME MODE ========
