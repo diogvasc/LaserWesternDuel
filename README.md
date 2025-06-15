@@ -1,6 +1,8 @@
 # LaserWesternDuel
 Arduino project in the scope of the Project I course for Electrical and Computer Engineering, in FCTUC.
-### v0.2 - Diogo Vasco & Rodrigo Gonçalves
+### v0.4 - Diogo Vasco & Rodrigo Gonçalves
+
+## [Finished Project Video](https://www.youtube.com/watch?v=sUZ37NU45Uo)
 
 ## Project Description
 Classic [Western Duel](https://www.youtube.com/watch?v=dC6jnHFdqbQ) with two players facing wall-mounted targets. Players use 3D printed laser guns, mounted by ourselves, and the winner is determined by who hits their target the fastest.
